@@ -1,0 +1,25 @@
+.facts {
+    background-color: $primary-color;
+}
+
+.facts__item {
+    padding: 62px 0;
+    text-align: center;
+    & + & {
+        border-left: 1px solid rgba($color: #fff, $alpha: 0.3);
+    }
+}
+
+.facts__number {
+    font-family: $title-font;
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.facts__text {
+    font-family: $title-font;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}

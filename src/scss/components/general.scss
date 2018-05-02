@@ -1,0 +1,23 @@
+img {
+    // width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+    color: $title-color;
+}
+
+p {
+    font-family: $text-font;
+    color: $text-color;
+}
+
+.decor-line {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: $secondary-color;
+}
