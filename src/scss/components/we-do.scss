@@ -1,3 +1,12 @@
 .we-do {
   padding: 100px 0 120px;
 }
+
+.we-do__item .we-do__summary::-webkit-details-marker {
+  display: none;
+}
+
+.we-do__item .we-do__summary:before {
+  content: '\f107';
+  font-family: 'FontAwesome';
+}

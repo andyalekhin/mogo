@@ -1,0 +1,34 @@
+.people {
+    position: relative;
+    padding: 100px 0 120px;
+    background: url('../images/people__bg.jpg') center center / cover no-repeat;
+}
+
+.people:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.people__item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.people__img {
+    border-radius: 50%;
+}
+
+.people__span {
+    position: relative;
+    &:after {
+        @extend .decor-line;
+        bottom: 0;
+        left: 0;
+    }
+}
