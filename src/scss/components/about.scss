@@ -1,5 +1,9 @@
 .about {
     padding: 80px 0;
+
+    .section__text {
+        margin-bottom: 90px;
+    }
 }
 
 .section__title {
@@ -32,12 +36,9 @@
     text-align: center;
 }
 
-.about__items {
-    margin-top: 60px;
-}
-
 .about__item {
     position: relative;
+    cursor: pointer;
 }
 
 .about__img-wrap {

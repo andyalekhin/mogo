@@ -1,5 +1,8 @@
 .team {
   padding: 100px 0 120px;
+  .section__text {
+    margin-bottom: 90px;
+  }
 }
 
 .team__item {
@@ -82,4 +85,19 @@
     i {
         font-size: 24px;
     }
+}
+
+.team__caption {
+  margin-top: 28px;
+  text-align: center;
+
+  h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 15px;
+    font-style: italic;
+  }
 }

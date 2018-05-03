@@ -38,6 +38,8 @@ gulp.task('scripts', () =>
     gulp.src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+        'node_modules/masonry-layout/dist/masonry.pkgd.js',
+        'node_modules/imagesloaded/imagesloaded.pkgd.js',
         'src/js/main.js'
     ])
 		.pipe(concat('script.js'))
@@ -56,7 +58,7 @@ gulp.task('images', () =>
 gulp.task('fonts', () =>
     gulp.src('node_modules/font-awesome/fonts/*')
         .pipe(gulp.dest('public/fonts'))
-)
+);
 
 gulp.task('browserSync', () => 
     browserSync.init({
@@ -71,7 +73,7 @@ gulp.task('watch', function(){
     gulp.watch('src/scss/**/*.scss', ['styles']);
     gulp.watch('src/js/**/*.js', ['scripts']);
     gulp.watch('src/img/**/*', ['images']);
-})
+});
 
 gulp.task('default', ['views', 'styles', 'scripts', 'images', 'fonts']);
 gulp.task('dev', ['default', 'browserSync', 'watch']);

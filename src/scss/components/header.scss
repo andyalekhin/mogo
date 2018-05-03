@@ -1,7 +1,7 @@
 .header {
     position: relative;
     padding-top: 20px;
-    height: 100vh;
+    height: 100%;
     background: url('../images/hero__bg.jpg') center center / cover no-repeat;
 
     &:before {
@@ -52,29 +52,38 @@
 
 .slider {
     display: flex;
-     height: 100vh;
+     height: 100%;
      text-align: center;
       > .carousel {
           display: flex;
           align-self: center;
-          //position: absolute;
-          //top: 50%;
-          //left: 50%;
-          //transform: translate(-50%, -50%);
+          flex-direction: column;
           .carousel-indicators {
-              bottom: 0;
+              position: relative;
               margin: 0;
               li {
                   width: 25%;
-                  height: 3px;
+                  height: auto;
                   text-indent: 0;
                   color: #fff;
+                  background-color: transparent;
                   opacity: 0.7;
                   cursor: pointer;
+                  &:before {
+                      content: '';
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      height: 3px;
+                      width: 100%;
+                      background-color: #fff;
+                      opacity: 0.7;
+                      cursor: pointer;
+                  }
               }
               li.active {
                   opacity: 1;
-                  &:before {
+                  &:after {
                       content: '';
                       position: absolute;
                       top: 0;
