@@ -1,7 +1,10 @@
 .people {
     position: relative;
-    padding: 100px 0 120px;
+    padding: 100px 0 50px;
     background: url('../images/people__bg.jpg') center center / cover no-repeat;
+    .section__title {
+        margin-bottom: 80px;
+    }
 }
 
 .people:before {
@@ -18,6 +21,11 @@
 .people__item {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.people__descr {
+    margin-left: 30px;
 }
 
 .people__img {
@@ -28,7 +36,11 @@
     position: relative;
     &:after {
         @extend .decor-line;
-        bottom: 0;
+        bottom: -20px;
         left: 0;
     }
+}
+
+.people__text {
+    margin-top: 40px;
 }

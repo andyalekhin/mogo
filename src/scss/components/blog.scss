@@ -1,5 +1,5 @@
 .blog {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 .blog__items {
   margin-top: 30px;
@@ -62,18 +62,21 @@
   border-top: 1px solid #e5e5e5;
 }
 
+.blog__views {
+  margin-right: 20px;
+}
+
 .blog__views,
 .blog__comments {
   color: $text-color;
   font-family: $text-font;
   font-size: 15px;
   font-style: italic;
+  i {
+    margin-right: 6px;
+    color: $primary-color;
+  }
 }
 
-.blog__views i,
-.blog__comments i {
-  margin-right: 6px;
-  color: $primary-color;
-}
 
 
