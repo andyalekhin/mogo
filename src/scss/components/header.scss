@@ -47,6 +47,7 @@
         text-decoration: none;
         border-bottom: 3px solid $link-color;
         color: $link-color;
+        transition: all ease 0.3s;
     }
 }
 
@@ -94,6 +95,7 @@
                       width: 25%;
                       height: 3px;
                       background-color: $secondary-color;
+                      transition: all ease 0.3s;
                   }
               }
               p {
@@ -151,4 +153,10 @@
     text-decoration: none;
     border: 3px solid #fff;
     color: #fff;
+    &:hover {
+        text-decoration: none;
+        border: 3px solid $secondary-color;
+        color: $secondary-color;
+        transition: all ease 0.3s;
+    }
 }

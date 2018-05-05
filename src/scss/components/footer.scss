@@ -8,6 +8,9 @@
   margin-bottom: 34px;
   font-size: 46px;
   color: #ccc;
+  &:hover {
+    color: #ccc;
+  }
 }
 
 .footer__about__text {
@@ -58,6 +61,10 @@
 .follow__item {
     a {
       color: $primary-color;
+      &:hover {
+        color: $secondary-color;
+        transition: all 0.3s ease;
+      }
     }
  }
 
@@ -74,6 +81,7 @@
   font-style: italic;
   font-weight: 300;
   text-indent: 15px;
+  outline: none;
   color: #ccc;
   border: 1px solid #e7e7e7;
   background-color: #fff;
@@ -99,6 +107,11 @@
   color: #fff;
   border: none;
   background-color: $primary-color;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  &:hover {
+    background-color: $secondary-color;
+  }
 }
 
 .footer__title {
@@ -197,4 +210,9 @@
 
 .copyright__link {
   color: $secondary-color;
+  &:hover {
+    color: $primary-color;
+    text-decoration: none;
+    transition: all ease 0.3s;
+  }
 }
