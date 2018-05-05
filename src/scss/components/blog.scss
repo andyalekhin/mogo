@@ -1,82 +1,80 @@
 .blog {
-  padding: 100px 0;
+	padding: 100px 0;
 }
+
 .blog__items {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 
 .blog__img-wrap {
-  position: relative;
+	position: relative;
 }
 
 .blog__date {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: -10px;
-  bottom: 10px;
-  padding: 10px 15px;
-  text-align: center;
-  background-color: $primary-color;
-
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: -10px;
+	bottom: 10px;
+	padding: 10px 15px;
+	text-align: center;
+	background-color: $primary-color;
 }
+
 .blog__day {
-  font-family: $title-font;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1;
-  color: #fff;
+	font-family: $title-font;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
 }
 
 .blog__mouth {
-  font-family: $text-font;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1;
-  color: #fff;
+	font-family: $text-font;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 1;
+	color: #fff;
 }
 
 .blog__title {
-  margin: 16px 0;
-  font-family: $title-font;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: $title-color;
-  a {
-    font: inherit;
-    color: $title-color;
-  }
+	margin: 16px 0;
+	font-family: $title-font;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $title-color;
+	a {
+		font: inherit;
+		color: $title-color;
+	}
 }
 
 .blog__text {
-  color: $text-color;
-  font-family: $text-font;
-  font-size: 15px;
-  font-weight: 400;
+	color: $text-color;
+	font-family: $text-font;
+	font-size: 15px;
+	font-weight: 400;
 }
 
 .blog__footer {
-  padding-top: 16px;
-  border-top: 1px solid #e5e5e5;
+	padding-top: 16px;
+	border-top: 1px solid #e5e5e5;
 }
 
 .blog__views {
-  margin-right: 20px;
+	margin-right: 20px;
 }
 
 .blog__views,
 .blog__comments {
-  color: $text-color;
-  font-family: $text-font;
-  font-size: 15px;
-  font-style: italic;
-  i {
-    margin-right: 6px;
-    color: $primary-color;
-  }
+	color: $text-color;
+	font-family: $text-font;
+	font-size: 15px;
+	font-style: italic;
+	i {
+		margin-right: 6px;
+		color: $primary-color;
+	}
 }
-
-
-

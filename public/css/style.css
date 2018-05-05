@@ -1903,6 +1903,14 @@ p {
     display: block;
     width: 30px;
     height: 30px; }
+  .we-do__summary:after {
+    content: '\f107';
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-family: 'FontAwesome';
+    font-size: 30px;
+    color: #ccc; }
 
 .we-do__summary--photo:before {
   background: url("../images/we-do__picture.svg") no-repeat;
@@ -1915,15 +1923,6 @@ p {
 .we-do__summary--design:before {
   background: url("../images/we-do__bullseye.svg") no-repeat;
   background-size: contain; }
-
-.we-do__summary:after {
-  content: '\f107';
-  position: absolute;
-  top: 8px;
-  right: 20px;
-  font-family: 'FontAwesome';
-  font-size: 30px;
-  color: #ccc; }
 
 .we-do__item[open] > .we-do__summary {
   border-bottom: 1px solid #e5e5e5; }
@@ -1984,16 +1983,19 @@ p {
     left: -80px;
     top: 50%; }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   width: 5%;
   opacity: 1; }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   display: inline-block;
   width: auto;
   height: auto;
   background: transparent; }
-  .carousel-control-prev-icon .fa, .carousel-control-next-icon .fa {
+  .carousel-control-prev-icon .fa,
+  .carousel-control-next-icon .fa {
     font-size: 3em;
     color: #ccc; }
 

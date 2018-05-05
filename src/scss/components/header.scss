@@ -1,162 +1,161 @@
 .header {
-    position: relative;
-    padding-top: 20px;
-    height: 100%;
-    background: url('../images/hero__bg.jpg') center center / cover no-repeat;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-    }
+	position: relative;
+	padding-top: 20px;
+	height: 100%;
+	background: url('../images/hero__bg.jpg') center center / cover no-repeat;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+	}
 }
 
 .logo__link {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    &:hover {
-        text-decoration: none;
-        color: #fff;
-    }
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+	}
 }
 
 .menu__list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .link {
-    display: inline-block;
-    padding: 10px 2px;
-    font-family: $link-font;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-bottom: 3px solid transparent;
-    color: #fff;
-    &:hover {
-        text-decoration: none;
-        border-bottom: 3px solid $link-color;
-        color: $link-color;
-        transition: all ease 0.3s;
-    }
+	display: inline-block;
+	padding: 10px 2px;
+	font-family: $link-font;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-bottom: 3px solid transparent;
+	color: #fff;
+	&:hover {
+		text-decoration: none;
+		border-bottom: 3px solid $link-color;
+		color: $link-color;
+		transition: all ease 0.3s;
+	}
 }
 
 .slider {
-    display: flex;
-     height: 100%;
-     padding-top: 140px;
-     text-align: center;
-      > .carousel {
-          display: flex;
-          align-self: center;
-          flex-direction: column;
-          width: 100%;
-          .carousel-indicators {
-              position: relative;
-              margin: 0;
-              margin-top: 140px; 
-              li {
-                  width: 25%;
-                  height: auto;
-                  text-indent: 0;
-                  color: #fff;
-                  background-color: transparent;
-                  opacity: 0.7;
-                  cursor: pointer;
-                  &:before {
-                      content: '';
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      height: 3px;
-                      width: 100%;
-                      background-color: #fff;
-                      opacity: 0.7;
-                      cursor: pointer;
-                  }
-              }
-              li.active {
-                  opacity: 1;
-                  &:after {
-                      content: '';
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      width: 25%;
-                      height: 3px;
-                      background-color: $secondary-color;
-                      transition: all ease 0.3s;
-                  }
-              }
-              p {
-                  padding-top: 20px;
-                  font-family: 'Montserrat', sans-serif;
-                  font-size: 18px;
-                  text-transform: uppercase;
-                  text-align: left;
-                  color: #fff;
-                  margin-bottom: 0;
-              }
-              span {
-                  font-size: 24px;
-                  font-weight: bold;
-              }
-          }
-      }
+	display: flex;
+	height: 100%;
+	padding-top: 140px;
+	text-align: center;
+	>.carousel {
+		display: flex;
+		align-self: center;
+		flex-direction: column;
+		width: 100%;
+		.carousel-indicators {
+			position: relative;
+			margin: 0;
+			margin-top: 140px;
+			li {
+				width: 25%;
+				height: auto;
+				text-indent: 0;
+				color: #fff;
+				background-color: transparent;
+				opacity: 0.7;
+				cursor: pointer;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 3px;
+					width: 100%;
+					background-color: #fff;
+					opacity: 0.7;
+					cursor: pointer;
+				}
+			}
+			li.active {
+				opacity: 1;
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 25%;
+					height: 3px;
+					background-color: $secondary-color;
+					transition: all ease 0.3s;
+				}
+			}
+			p {
+				padding-top: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 18px;
+				text-transform: uppercase;
+				text-align: left;
+				color: #fff;
+				margin-bottom: 0;
+			}
+			span {
+				font-size: 24px;
+				font-weight: bold;
+			}
+		}
+	}
 }
 
 .carousel__title {
-    position: relative;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    font-size: 150px;
-    font-weight: bold;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #fff;
-    &:after {
-        @extend .decor-line;
-        bottom: 0;
-        left: 50%;
-        background-color: #fff;
-        transform: translateX(-50%);
-    }
+	position: relative;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	font-size: 150px;
+	font-weight: bold;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #fff;
+	&:after {
+		@extend .decor-line;
+		bottom: 0;
+		left: 50%;
+		background-color: #fff;
+		transform: translateX(-50%);
+	}
 }
 
 .carousel__span {
-    display: block;
-    padding-bottom: 30px;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 72px;
-    font-weight: normal;
-    text-transform: none;
-    color: #fff; 
+	display: block;
+	padding-bottom: 30px;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 72px;
+	font-weight: normal;
+	text-transform: none;
+	color: #fff;
 }
 
 .carousel__link {
-    display: inline-block;
-    padding: 10px 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 3px solid #fff;
-    color: #fff;
-    &:hover {
-        text-decoration: none;
-        border: 3px solid $secondary-color;
-        color: $secondary-color;
-        transition: all ease 0.3s;
-    }
+	display: inline-block;
+	padding: 10px 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 3px solid #fff;
+	color: #fff;
+	&:hover {
+		text-decoration: none;
+		border: 3px solid $secondary-color;
+		color: $secondary-color;
+		transition: all ease 0.3s;
+	}
 }
