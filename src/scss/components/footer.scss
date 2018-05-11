@@ -1,12 +1,12 @@
 .footer {
-	padding-top: 74px;
+	padding-top: 7.4rem;
 	background-color: #f8f8f8;
 }
 
 .logo__link--footer {
 	display: inline-block;
-	margin-bottom: 34px;
-	font-size: 46px;
+	margin-bottom: 3.4rem;
+	font-size: 4.6rem;
 	color: #ccc;
 	&:hover {
 		color: #ccc;
@@ -14,14 +14,14 @@
 }
 
 .footer__about__text {
-	font-size: 15px;
+	font-size: 1.5rem;
 }
 
 .footer__about__text + .footer__about__text {
-	margin: 30px 0;
+	margin: 3rem 0;
 	font-family: $title-font;
 	b {
-		font-size: 18px;
+		font-size: 1.8rem;
 		font-weight: bold;
 		color: $title-color;
 	}
@@ -43,7 +43,7 @@
 }
 
 .footer__followers__text {
-	font-size: 15px;
+	font-size: 1.5rem;
 	font-style: italic;
 	font-weight: 300;
 	white-space: nowrap;
@@ -61,6 +61,7 @@
 
 .follow__item {
 	a {
+		font-size: 1.4rem;
 		color: $primary-color;
 		&:hover {
 			color: $secondary-color;
@@ -71,17 +72,17 @@
 
 .footer__form {
 	display: flex;
-	margin-top: 30px;
+	margin-top: 3rem;
 }
 
 .footer__input {
-	width: 230px;
-	height: 40px;
+	width: 23rem;
+	height: 4rem;
 	font-family: 'Roboto';
-	font-size: 15px;
+	font-size: 1.5rem;
 	font-style: italic;
 	font-weight: 300;
-	text-indent: 15px;
+	text-indent: 1.5rem;
 	outline: none;
 	color: #ccc;
 	border: 1px solid #e7e7e7;
@@ -98,9 +99,9 @@
 }
 
 .footer__btn {
-	padding: 10px 25px;
+	padding: 1rem 2.5rem;
 	font-family: 'Montserrat';
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #fff;
@@ -114,9 +115,9 @@
 }
 
 .footer__title {
-	margin-top: 20px;
-	margin-bottom: 40px;
-	font-size: 14px;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 }
 
@@ -124,19 +125,19 @@
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 3rem;
 }
 
 .footer__blog__caption {
 	display: flex;
 	flex-direction: column;
-	margin-left: 20px;
+	margin-left: 2rem;
 }
 
 .footer__blog__link {
 	display: block;
 	font-family: $link-font;
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: $title-color;
@@ -150,7 +151,7 @@
 	font-family: $text-font;
 	font-style: italic;
 	font-weight: 300;
-	font-size: 13px;
+	font-size: 1.3rem;
 	color: $text-color;
 }
 
@@ -175,8 +176,8 @@
 
 .footer__instagram__link {
 	display: inline-block;
-	margin-top: 16px;
-	font-size: 13px;
+	margin-top: 1.6rem;
+	font-size: 1.3rem;
 	font-style: italic;
 	font-weight: 300;
 	color: $title-color;
@@ -198,8 +199,8 @@
 }
 
 .copyright__text {
-	padding: 20px 0;
-	font-size: 14px;
+	padding: 2rem 0;
+	font-size: 1.4rem;
 	font-family: $title-font;
 	color: $title-color;
 }

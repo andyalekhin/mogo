@@ -1,5 +1,15 @@
+html {
+    font-size: 62.5%;
+    @media (max-width: 992px) {
+        // font-size: 41.666%;
+    }
+}
+
+body {
+    font: 1.6rem/1.5 'Roboto', sans-serif;
+}
+
 img {
-    // width: 100%;
     max-width: 100%;
     height: auto;
 }

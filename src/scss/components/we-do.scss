@@ -1,12 +1,12 @@
 .we-do {
-	padding: 100px 0 120px;
+	padding: 10rem 0 12rem;
 	.section__text {
-		margin-bottom: 90px;
+		margin-bottom: 9rem;
 	}
 }
 
 .we-do__item {
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 	border: 1px solid #e5e5e5;
 	&:last-child {
 		margin-bottom: 0;
@@ -15,9 +15,9 @@
 
 .we-do__summary {
 	position: relative;
-	padding: 18px 60px;
+	padding: 1.8rem 6rem;
 	font-family: $title-font;
-	font-size: 14px;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 	color: $title-color;
 	outline: none;
@@ -39,7 +39,7 @@
 		top: 8px;
 		right: 20px;
 		font-family: 'FontAwesome';
-		font-size: 30px;
+		font-size: 3rem;
 		color: #ccc;
 	}
 }
@@ -69,9 +69,9 @@
 
 .we-do__text {
 	max-height: 130px;
-	margin: 20px 25px 24px 20px;
-	padding-right: 30px;
-	font-size: 15px;
+	margin: 2rem 2.5rem 2.4rem 2rem;
+	padding-right: 3rem;
+	font-size: 1.5rem;
 	font-style: italic;
 	overflow-y: scroll;
 	&::-webkit-scrollbar {

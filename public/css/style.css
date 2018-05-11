@@ -1551,6 +1551,12 @@ html {
 .fa-pinterest-p:before {
   content: ""; }
 
+html {
+  font-size: 62.5%; }
+
+body {
+  font: 1.6rem/1.5 'Roboto', sans-serif; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -1572,7 +1578,7 @@ p {
 
 .header {
   position: relative;
-  padding-top: 20px;
+  padding-top: 2rem;
   height: 100%;
   background: url("../images/hero__bg.jpg") center center/cover no-repeat; }
   .header:before {
@@ -1587,7 +1593,7 @@ p {
 
 .logo__link {
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: bold;
   color: #fff; }
   .logo__link:hover {
@@ -1603,9 +1609,9 @@ p {
 
 .link {
   display: inline-block;
-  padding: 10px 2px;
+  padding: 1rem 0.2rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   border-bottom: 3px solid transparent;
   color: #fff; }
@@ -1618,7 +1624,7 @@ p {
 .slider {
   display: flex;
   height: 100%;
-  padding-top: 140px;
+  padding-top: 14rem;
   text-align: center; }
   .slider > .carousel {
     display: flex;
@@ -1628,7 +1634,7 @@ p {
     .slider > .carousel .carousel-indicators {
       position: relative;
       margin: 0;
-      margin-top: 140px; }
+      margin-top: 14rem; }
       .slider > .carousel .carousel-indicators li {
         width: 25%;
         height: auto;
@@ -1659,22 +1665,22 @@ p {
           background-color: #f38181;
           transition: all ease 0.3s; }
       .slider > .carousel .carousel-indicators p {
-        padding-top: 20px;
+        padding-top: 2rem;
         font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
+        font-size: 1.8rem;
         text-transform: uppercase;
         text-align: left;
         color: #fff;
         margin-bottom: 0; }
       .slider > .carousel .carousel-indicators span {
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: bold; }
 
 .carousel__title {
   position: relative;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-  font-size: 150px;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  font-size: 15rem;
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
@@ -1687,18 +1693,18 @@ p {
 
 .carousel__span {
   display: block;
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
   font-family: 'Kaushan Script', cursive;
-  font-size: 72px;
+  font-size: 7.2rem;
   font-weight: normal;
   text-transform: none;
   color: #fff; }
 
 .carousel__link {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 1rem 3rem;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -1717,8 +1723,8 @@ p {
 
 .section__title {
   position: relative;
-  padding-bottom: 24px;
-  font-size: 30px;
+  padding-bottom: 2.4rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase; }
@@ -1729,15 +1735,15 @@ p {
 
 .section__span {
   display: block;
-  padding-bottom: 6px;
+  padding-bottom: 0.6rem;
   font-family: 'Kaushan Script', cursive;
-  font-size: 24px;
+  font-size: 2.4rem;
   text-transform: none;
   color: #333; }
 
 .section__text {
-  margin: 40px 0 20px;
-  font-size: 15px;
+  margin: 4rem 0 2rem;
+  font-size: 1.5rem;
   text-align: center; }
 
 .about__item {
@@ -1783,8 +1789,8 @@ p {
   z-index: 5; }
 
 .about__item:hover .about__caption {
-  padding-right: 10px;
-  padding-top: 10px;
+  padding-right: 1rem;
+  padding-top: 1rem;
   transition: opacity 0.3s ease-out 0.3s;
   opacity: 1; }
 
@@ -1792,12 +1798,12 @@ p {
   display: block;
   text-align: center; }
   .about__icon i {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #fff; }
 
 .about__text {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 300;
   text-transform: uppercase;
   color: #fff; }
@@ -1806,49 +1812,49 @@ p {
   background-color: #95e1d3; }
 
 .facts__item {
-  padding: 62px 0;
+  padding: 6.2rem 0;
   text-align: center; }
   .facts__item + .facts__item {
     border-left: 1px solid rgba(255, 255, 255, 0.3); }
 
 .facts__number {
   font-family: "Montserrat", sans-serif;
-  font-size: 72px;
+  font-size: 7.2rem;
   font-weight: bold;
   color: #fff; }
 
 .facts__text {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   color: #fff; }
 
 .services {
-  padding: 100px 0 70px; }
+  padding: 10rem 0 7rem; }
   .services .section__title {
-    margin-bottom: 60px; }
+    margin-bottom: 6rem; }
 
 .services__item {
   display: flex;
-  margin-bottom: 50px; }
+  margin-bottom: 5rem; }
   .services__item svg {
     min-width: 32px; }
 
 .services__descr {
-  margin-left: 28px; }
+  margin-left: 2.8rem; }
 
 .services__title {
-  margin-bottom: 16px;
-  font-size: 14px;
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
   text-transform: uppercase; }
 
 .services__text {
   margin-bottom: 0;
-  font-size: 15px; }
+  font-size: 1.5rem; }
 
 .design {
   position: relative;
-  padding-top: 100px;
+  padding-top: 10rem;
   background: url("../images/design__bg.jpg") center center/cover no-repeat; }
 
 .design:before {
@@ -1875,21 +1881,21 @@ p {
   right: 16%; }
 
 .we-do {
-  padding: 100px 0 120px; }
+  padding: 10rem 0 12rem; }
   .we-do .section__text {
-    margin-bottom: 90px; }
+    margin-bottom: 9rem; }
 
 .we-do__item {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   border: 1px solid #e5e5e5; }
   .we-do__item:last-child {
     margin-bottom: 0; }
 
 .we-do__summary {
   position: relative;
-  padding: 18px 60px;
+  padding: 1.8rem 6rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   color: #333;
   outline: none; }
@@ -1909,7 +1915,7 @@ p {
     top: 8px;
     right: 20px;
     font-family: 'FontAwesome';
-    font-size: 30px;
+    font-size: 3rem;
     color: #ccc; }
 
 .we-do__summary--photo:before {
@@ -1932,9 +1938,9 @@ p {
 
 .we-do__text {
   max-height: 130px;
-  margin: 20px 25px 24px 20px;
-  padding-right: 30px;
-  font-size: 15px;
+  margin: 2rem 2.5rem 2.4rem 2rem;
+  padding-right: 3rem;
+  font-size: 1.5rem;
   font-style: italic;
   overflow-y: scroll; }
   .we-do__text::-webkit-scrollbar {
@@ -1949,27 +1955,27 @@ p {
     background-color: #46cbb2; }
 
 .quote {
-  padding: 70px;
+  padding: 7rem;
   background-color: #f8f8f8; }
 
 .quote__item {
   display: flex;
   align-items: center;
-  margin: 0 110px; }
+  margin: 0 11rem; }
 
 .quote__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 60px;
-  padding: 40px;
+  margin-right: 6rem;
+  padding: 4rem;
   font-size: 4em;
   color: #95e1d3;
   border: 3px solid #95e1d3; }
 
 .quote__text {
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
   font-weight: 300;
   font-style: italic; }
 
@@ -1977,7 +1983,7 @@ p {
   position: relative;
   left: 80px;
   font-family: 'Kaushan Script', cursive;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #333; }
   .quote__author:before {
     left: -80px;
@@ -2000,9 +2006,9 @@ p {
     color: #ccc; }
 
 .team {
-  padding: 100px 0 120px; }
+  padding: 10rem 0 12rem; }
   .team .section__text {
-    margin-bottom: 90px; }
+    margin-bottom: 9rem; }
 
 .team__img-wrap {
   position: relative;
@@ -2041,7 +2047,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  padding: 0 20px 20px 0;
+  padding: 0 2rem 2rem 0;
   list-style: none;
   z-index: 5;
   opacity: 0; }
@@ -2065,20 +2071,20 @@ p {
     background-color: #fce38a; }
 
 .social__item i {
-  font-size: 24px; }
+  font-size: 2.4rem; }
 
 .team__caption {
-  margin-top: 28px;
+  margin-top: 2.8rem;
   text-align: center; }
   .team__caption h4 {
-    font-size: 14px;
+    font-size: 1.4rem;
     text-transform: uppercase; }
   .team__caption p {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-style: italic; }
 
 .logos {
-  padding: 50px 0;
+  padding: 5rem 0;
   background-color: #f8f8f8; }
 
 .logos__list {
@@ -2091,10 +2097,10 @@ p {
 
 .portfolio {
   max-width: 1920px;
-  padding-top: 100px;
+  padding-top: 10rem;
   margin: 0 auto; }
   .portfolio .section__text {
-    margin-bottom: 90px; }
+    margin-bottom: 9rem; }
 
 .grid {
   width: 100%; }
@@ -2103,18 +2109,18 @@ p {
   width: 25%; }
 
 .testimonials {
-  padding: 100px 0 130px;
+  padding: 10rem 0 13rem;
   background-color: #fff; }
 
 .testimonials__img {
-  margin-right: 30px; }
+  margin-right: 3rem; }
 
 .people {
   position: relative;
-  padding: 100px 0 50px;
+  padding: 10rem 0 5rem;
   background: url("../images/people__bg.jpg") center center/cover no-repeat; }
   .people .section__title {
-    margin-bottom: 80px; }
+    margin-bottom: 8rem; }
 
 .people:before {
   content: '';
@@ -2129,28 +2135,42 @@ p {
 .people__item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 50px; }
+  margin-bottom: 5rem; }
 
 .people__descr {
-  margin-left: 30px; }
+  margin-left: 3rem; }
+
+.people__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #333; }
 
 .people__img {
   border-radius: 50%; }
 
 .people__span {
-  position: relative; }
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 300;
+  color: #333; }
   .people__span:after {
     bottom: -20px;
     left: 0; }
 
 .people__text {
-  margin-top: 40px; }
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  color: #999; }
 
 .blog {
-  padding: 100px 0; }
+  padding: 10rem 0; }
 
 .blog__items {
-  margin-top: 30px; }
+  margin-top: 3rem; }
 
 .blog__img-wrap {
   position: relative; }
@@ -2161,29 +2181,29 @@ p {
   position: absolute;
   left: -10px;
   bottom: 10px;
-  padding: 10px 15px;
+  padding: 1rem 1.5rem;
   text-align: center;
   background-color: #95e1d3; }
 
 .blog__day {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1;
   color: #fff; }
 
 .blog__mouth {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 300;
   font-style: italic;
   line-height: 1;
   color: #fff; }
 
 .blog__title {
-  margin: 16px 0;
+  margin: 1.6rem 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #333; }
@@ -2194,21 +2214,21 @@ p {
 .blog__text {
   color: #999;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400; }
 
 .blog__footer {
-  padding-top: 16px;
+  padding-top: 1.6rem;
   border-top: 1px solid #e5e5e5; }
 
 .blog__views {
-  margin-right: 20px; }
+  margin-right: 2rem; }
 
 .blog__views,
 .blog__comments {
   color: #999;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-style: italic; }
   .blog__views i,
   .blog__comments i {
@@ -2234,7 +2254,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #f38181;
@@ -2248,7 +2268,7 @@ p {
     left: 50%;
     transform: translateX(-50%);
     font-family: 'FontAwesome';
-    font-size: 40px;
+    font-size: 4rem;
     color: #f38181; }
   .map__link:after {
     bottom: -20px;
@@ -2261,25 +2281,25 @@ p {
   background-color: #000; }
 
 .footer {
-  padding-top: 74px;
+  padding-top: 7.4rem;
   background-color: #f8f8f8; }
 
 .logo__link--footer {
   display: inline-block;
-  margin-bottom: 34px;
-  font-size: 46px;
+  margin-bottom: 3.4rem;
+  font-size: 4.6rem;
   color: #ccc; }
   .logo__link--footer:hover {
     color: #ccc; }
 
 .footer__about__text {
-  font-size: 15px; }
+  font-size: 1.5rem; }
 
 .footer__about__text + .footer__about__text {
-  margin: 30px 0;
+  margin: 3rem 0;
   font-family: "Montserrat", sans-serif; }
   .footer__about__text + .footer__about__text b {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #333; }
 
@@ -2297,7 +2317,7 @@ p {
     background-color: #e5e5e5; }
 
 .footer__followers__text {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: 300;
   white-space: nowrap;
@@ -2312,6 +2332,7 @@ p {
   list-style-type: none; }
 
 .follow__item a {
+  font-size: 1.4rem;
   color: #95e1d3; }
   .follow__item a:hover {
     color: #f38181;
@@ -2319,16 +2340,16 @@ p {
 
 .footer__form {
   display: flex;
-  margin-top: 30px; }
+  margin-top: 3rem; }
 
 .footer__input {
-  width: 230px;
-  height: 40px;
+  width: 23rem;
+  height: 4rem;
   font-family: 'Roboto';
-  font-size: 15px;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: 300;
-  text-indent: 15px;
+  text-indent: 1.5rem;
   outline: none;
   color: #ccc;
   border: 1px solid #e7e7e7;
@@ -2342,9 +2363,9 @@ p {
     transition: opacity 0.3s ease; }
 
 .footer__btn {
-  padding: 10px 25px;
+  padding: 1rem 2.5rem;
   font-family: 'Montserrat';
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
@@ -2356,26 +2377,26 @@ p {
     background-color: #f38181; }
 
 .footer__title {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-size: 14px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  font-size: 1.4rem;
   text-transform: uppercase; }
 
 .footer__blog__item {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  margin-bottom: 30px; }
+  margin-bottom: 3rem; }
 
 .footer__blog__caption {
   display: flex;
   flex-direction: column;
-  margin-left: 20px; }
+  margin-left: 2rem; }
 
 .footer__blog__link {
   display: block;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #333; }
@@ -2387,7 +2408,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #999; }
 
 .copyright__text {
@@ -2408,8 +2429,8 @@ p {
 
 .footer__instagram__link {
   display: inline-block;
-  margin-top: 16px;
-  font-size: 13px;
+  margin-top: 1.6rem;
+  font-size: 1.3rem;
   font-style: italic;
   font-weight: 300;
   color: #333; }
@@ -2427,8 +2448,8 @@ p {
     background-color: #e5e5e5; }
 
 .copyright__text {
-  padding: 20px 0;
-  font-size: 14px;
+  padding: 2rem 0;
+  font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
   color: #333; }
 
