@@ -1,6 +1,9 @@
 .footer {
 	padding-top: 7.4rem;
 	background-color: #f8f8f8;
+	@media (max-width: 767px) {
+		padding-top: 6rem;
+    }
 }
 
 .logo__link--footer {
@@ -11,6 +14,12 @@
 	&:hover {
 		color: #ccc;
 	}
+}
+
+.footer__about {
+	@media (max-width: 991px) {
+		margin-bottom: 4rem; 
+    }
 }
 
 .footer__about__text {
@@ -119,11 +128,16 @@
 	margin-bottom: 4rem;
 	font-size: 1.4rem;
 	text-transform: uppercase;
+	@media (max-width: 991px) {
+		margin-bottom: 2.5rem;
+		text-align: center;
+    }
 }
 
 .footer__blog__item {
 	display: flex;
 	flex-direction: row-reverse;
+	justify-content: flex-end;
 	align-items: center;
 	margin-bottom: 3rem;
 }
@@ -167,11 +181,21 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	@media (max-width: 991px) {
+		justify-content: center; 
+	}
+	@media (max-width: 767px) {
+		max-width: 360px;
+		margin: auto;
+    }
 }
 
 .footer__instagram__item {
 	width: calc(33.333% - 4px);
 	margin: 2px;
+	@media (max-width: 991px) {
+		width: auto;
+	}
 }
 
 .footer__instagram__link {
@@ -184,6 +208,13 @@
 	&:hover {
 		color: $title-color;
 	}
+	@media (max-width: 991px) {
+		display: inherit;
+		text-align: center;
+	}
+	@media (max-width: 768px) {
+		margin-bottom: 4rem; 
+    }
 }
 
 .footer__copyright {

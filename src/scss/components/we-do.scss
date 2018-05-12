@@ -1,8 +1,8 @@
 .we-do {
 	padding: 10rem 0 12rem;
-	.section__text {
-		margin-bottom: 9rem;
-	}
+	@media (max-width: 991px) {
+		padding: 10rem 0 6rem;
+	} 
 }
 
 .we-do__item {
@@ -11,6 +11,12 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
+}
+
+.we-do__img {
+	@media (max-width: 767px) {
+		margin-bottom: 3rem; 
+	} 
 }
 
 .we-do__summary {

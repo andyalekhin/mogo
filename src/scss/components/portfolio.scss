@@ -2,9 +2,9 @@
 	max-width: 1920px;
 	padding-top: 10rem;
 	margin: 0 auto;
-	.section__text {
-		margin-bottom: 9rem;
-	}
+	@media (max-width: 991px) {
+		padding-top: 6rem;
+    }
 }
 
 .grid {

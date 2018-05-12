@@ -1,13 +1,23 @@
 .team {
 	padding: 10rem 0 12rem;
-	.section__text {
-		margin-bottom: 9rem;
-	}
+	@media (max-width: 991px) {
+		padding: 6rem 0 2rem;
+    }
+}
+
+.team__item {
+	@media (max-width: 767px) {
+		margin-bottom: 4rem; 
+    }
 }
 
 .team__img-wrap {
 	position: relative;
 	background-color: $primary-color;
+	@media (max-width: 767px) {
+		max-width: 380px;
+		margin: auto;
+    }
 	&:after {
 		content: "";
 		position: absolute;

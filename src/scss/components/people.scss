@@ -2,6 +2,9 @@
 	position: relative;
 	padding: 10rem 0 5rem;
 	background: url('../images/people__bg.jpg') center center / cover no-repeat;
+	@media (max-width: 991px) {
+		padding: 6rem 0 1rem;
+	}
 	.section__title {
 		margin-bottom: 8rem;
 	}
@@ -22,10 +25,23 @@
 	display: flex;
 	align-items: flex-start;
 	margin-bottom: 5rem;
+	@media (max-width: 500px) {
+		flex-direction: column;
+	}
+}
+
+.people__img {
+	border-radius: 50%;
+	@media (max-width: 500px) {
+		margin: 0 auto 2rem;
+	}
 }
 
 .people__descr {
 	margin-left: 3rem;
+	@media (max-width: 500px) {
+		margin-left: 0;
+	}
 }
 
 .people__title {
@@ -33,10 +49,9 @@
 	font-size: 1.4rem;
 	text-transform: uppercase;
 	color: $title-color;
-}
-
-.people__img {
-	border-radius: 50%;
+	@media (max-width: 500px) {
+		text-align: center;
+	}
 }
 
 .people__span {
@@ -46,10 +61,18 @@
 	font-style: italic;
 	font-weight: 300;
 	color: $title-color;
+	@media (max-width: 500px) {
+		display: block;
+		text-align: center;
+	}
 	&:after {
 		@extend .decor-line;
 		bottom: -20px;
 		left: 0;
+		@media (max-width: 500px) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 }
 
@@ -58,4 +81,7 @@
 	font-size: 1.5rem;
 	margin-top: 4rem;
 	color: $text-color;
+	@media (max-width: 500px) {
+		text-align: center;
+	}
 }
