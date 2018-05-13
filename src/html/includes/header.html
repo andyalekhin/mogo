@@ -1,9 +1,14 @@
 <header class="header">
     <div class="container">
+        <div class="header__fixed">
+
+        
         <div class="row">
+
             <div class="col">
-                <div class="logo"><a class="logo__link" href="#">MoGo</a></div>
+                <div class="logo logo--header"><a class="logo__link" href="#">MoGo</a></div>
             </div>
+
             <div class="col">
                 <nav class="nav">
                     <ul class="menu__list">
@@ -32,6 +37,23 @@
                 </nav>
             </div>
         </div><!-- .row -->
+
+    </div>
+
+            <a href="#menu__mobile" class="menu__toggle-btn menu__toggle-btn--open" aria-role="button"><i class="fa fa-bars"></i></a>
+
+            <nav id="menu__mobile">
+                <a href="" class="menu__toggle-btn" aria-role="button"><i class="fa fa-times"></i></a>
+                <ul class="menu__mobile__list">
+                    <li class="menu__mobile__item"><a href="#">About</a></li>
+                    <li class="menu__mobile__item"><a href="#">Service</a></li>
+                    <li class="menu__mobile__item"><a href="#">Work</a></li>
+                    <li class="menu__mobile__item"><a href="#">Blog</a></li>
+                    <li class="menu__mobile__item"><a href="#">Contact</a></li>
+                    <li class="menu__mobile__item"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    <li class="menu__mobile__item"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
 
         <div class="slider">
             <div id="header-carousel" class="carousel slide" data-ride="carousel">
