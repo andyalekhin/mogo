@@ -20,9 +20,9 @@ gulp.task('views', () =>
             basepath: '@file'
         }))
         .pipe(htmlmin({
-            collapseWhitespace: true
+            collapseWhitespace: false
         }))
-        .pipe(gulp.dest('public'))
+        .pipe(gulp.dest('./'))
         .pipe(browserSync.stream())
 );
 
@@ -30,7 +30,7 @@ gulp.task('styles', () =>
     gulp.src('src/scss/*.scss')
         .pipe(plumber())
         .pipe(sass())
-        .pipe(gulp.dest('public/css'))
+        .pipe(gulp.dest('./css'))
         .pipe(browserSync.stream())
 );
 
@@ -44,26 +44,26 @@ gulp.task('scripts', () =>
     ])
 		.pipe(concat('script.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('public/js'))
+		.pipe(gulp.dest('./js'))
 		.pipe(browserSync.stream())
 );
 
 gulp.task('images', () =>
     gulp.src('src/img/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('public/images'))
+        .pipe(gulp.dest('./images'))
         .pipe(browserSync.stream())
 );
 
 gulp.task('fonts', () =>
     gulp.src('node_modules/font-awesome/fonts/*')
-        .pipe(gulp.dest('public/fonts'))
+        .pipe(gulp.dest('./fonts'))
 );
 
 gulp.task('browserSync', () => 
     browserSync.init({
         server: {
-            baseDir: 'public'
+            baseDir: './'
         }
     })
 );

@@ -2,6 +2,9 @@
     position: relative;
     padding-top: 10rem;
     background: url('../images/design__bg.jpg') center center / cover no-repeat;
+    .section__title {
+		margin-bottom: 6rem;
+	}
 }
 
 .design:before {
@@ -18,15 +21,24 @@
 .design__images {
     position: relative;
     text-align: center;
+
+
 }
 
 .design__img--tablet {
     position: relative;
     bottom: 0;
+    @media (max-width: 991px) {
+        max-width: 60%;
+        margin: 0 auto;
+    }
 }
 
 .design__img--mobile {
     position: absolute;
     bottom: -62px;
     right: 16%;
+    @media (max-width: 991px) {
+        max-width: 27%;
+	}
 }

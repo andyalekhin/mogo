@@ -179,7 +179,11 @@
 		display: none;
 	}
 }
-
+@media (max-width: 767px) {
+	.menu__toggle-btn--open {
+		display: block;
+	}
+}
 .slider {
 	display: flex;
 	height: 100%;
@@ -235,10 +239,16 @@
 				text-align: left;
 				color: #fff;
 				margin-bottom: 0;
+				@media (max-width: 767px) {
+					font-size: 1.4rem;
+				}
 			}
 			span {
 				font-size: 2.4rem;
 				font-weight: bold;
+				@media (max-width: 767px) {
+					font-size: 2rem;
+				}
 			}
 		}
 	}
@@ -253,6 +263,15 @@
 	line-height: 1;
 	text-transform: uppercase;
 	color: #fff;
+	@media (max-width: 991px) {
+		font-size: 10rem;
+	}
+	@media (max-width: 767px) {
+		font-size: 6rem;
+	}
+	@media (max-width: 380px) {
+		font-size: 4rem;
+	}
 	&:after {
 		@extend .decor-line;
 		bottom: 0;
@@ -270,6 +289,15 @@
 	font-weight: normal;
 	text-transform: none;
 	color: #fff;
+	@media (max-width: 991px) {
+		font-size: 4rem;
+	}
+	@media (max-width: 767px) {
+		font-size: 3rem;
+	}
+	@media (max-width: 380px) {
+		font-size: 2rem;
+	}
 }
 
 .carousel__link {
@@ -282,6 +310,9 @@
 	text-decoration: none;
 	border: 3px solid #fff;
 	color: #fff;
+	@media (max-width: 991px) {
+		font-size: 1.2rem;
+	}
 	&:hover {
 		text-decoration: none;
 		border: 3px solid $secondary-color;

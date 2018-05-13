@@ -1558,6 +1558,7 @@ html {
   content: ""; }
 
 html {
+  min-width: 320px;
   font-size: 62.5%; }
 
 body {
@@ -1733,6 +1734,10 @@ p {
   .menu__toggle-btn--open {
     display: none; } }
 
+@media (max-width: 767px) {
+  .menu__toggle-btn--open {
+    display: block; } }
+
 .slider {
   display: flex;
   height: 100%;
@@ -1784,9 +1789,15 @@ p {
         text-align: left;
         color: #fff;
         margin-bottom: 0; }
+        @media (max-width: 767px) {
+          .slider > .carousel .carousel-indicators p {
+            font-size: 1.4rem; } }
       .slider > .carousel .carousel-indicators span {
         font-size: 2.4rem;
         font-weight: bold; }
+        @media (max-width: 767px) {
+          .slider > .carousel .carousel-indicators span {
+            font-size: 2rem; } }
 
 .carousel__title {
   position: relative;
@@ -1797,6 +1808,15 @@ p {
   line-height: 1;
   text-transform: uppercase;
   color: #fff; }
+  @media (max-width: 991px) {
+    .carousel__title {
+      font-size: 10rem; } }
+  @media (max-width: 767px) {
+    .carousel__title {
+      font-size: 6rem; } }
+  @media (max-width: 380px) {
+    .carousel__title {
+      font-size: 4rem; } }
   .carousel__title:after {
     bottom: 0;
     left: 50%;
@@ -1811,6 +1831,15 @@ p {
   font-weight: normal;
   text-transform: none;
   color: #fff; }
+  @media (max-width: 991px) {
+    .carousel__span {
+      font-size: 4rem; } }
+  @media (max-width: 767px) {
+    .carousel__span {
+      font-size: 3rem; } }
+  @media (max-width: 380px) {
+    .carousel__span {
+      font-size: 2rem; } }
 
 .carousel__link {
   display: inline-block;
@@ -1822,6 +1851,9 @@ p {
   text-decoration: none;
   border: 3px solid #fff;
   color: #fff; }
+  @media (max-width: 991px) {
+    .carousel__link {
+      font-size: 1.2rem; } }
   .carousel__link:hover {
     text-decoration: none;
     border: 3px solid #f38181;
@@ -2016,6 +2048,8 @@ p {
   position: relative;
   padding-top: 10rem;
   background: url("../images/design__bg.jpg") center center/cover no-repeat; }
+  .design .section__title {
+    margin-bottom: 6rem; }
 
 .design:before {
   content: '';
@@ -2034,11 +2068,18 @@ p {
 .design__img--tablet {
   position: relative;
   bottom: 0; }
+  @media (max-width: 991px) {
+    .design__img--tablet {
+      max-width: 60%;
+      margin: 0 auto; } }
 
 .design__img--mobile {
   position: absolute;
   bottom: -62px;
   right: 16%; }
+  @media (max-width: 991px) {
+    .design__img--mobile {
+      max-width: 27%; } }
 
 .we-do {
   padding: 10rem 0 12rem; }
