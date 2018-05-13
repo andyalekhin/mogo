@@ -100,11 +100,12 @@
 }
 
 #menu__mobile {
+	display: none;
 	position: fixed;
 	top: 0;
 	right: 0;
 	z-index: 20;
-	width: 240px;
+	width: 0;
 	height: 100%;
 	padding-top: 60px;
 	background-color: $secondary-color;
@@ -169,13 +170,8 @@
 	}
 }
 
-#menu__mobile {
-	transform: translate3d(0, 0, 0) translateX(240px);
-	transition: all .25s cubic-bezier(.16, .63, .45, .98);
-}
-
-#menu__mobile:target {
-	transform: translate3d(0, 0, 0) translateX(0);
+.menu__toggle-btn--close {
+	display: none;
 }
 
 @media (min-width: 767px) {

@@ -1,76 +1,90 @@
-$('#header-carousel').carousel({
-    // interval: 2000
-});
+(function () {
 
-$('#quote-carousel').carousel({
-    // interval: 2000
-});
+    // fixed header
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('.header__fixed').addClass('header--fixed');
+        } else {
+            $('.header__fixed').removeClass('header--fixed');
+        }
+    });
 
-// init Masonry
-var $grid = $('.grid').masonry({
-    itemSelector: '.grid-item',
-    percentPosition: true
-});
+    // scroll to link
+    $('.nav, #menu__mobile').on('click', 'a', function(){
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body, html').animate({scrollTop: (top -45 +'px')}, 1500);
+        if ($('#menu__mobile').is(":visible")) {
+            $('.menu__toggle-btn--close').hide();
+            $('#menu__mobile').animate({
+                width: "0",
+            }, 600 );
+        }
+    });
 
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-    $grid.masonry('layout');
-});
+    // open mobile menu
+    $('.menu__toggle-btn--open').click(function() {
+        $('#menu__mobile').show();
+        $('#menu__mobile').animate({
+                width: "240px",
+            }, 
+            600, function() {
+                $('.menu__toggle-btn--close').show();
+            }
+        );
+    });
 
-function initialize() {
-    if (!!document.getElementById('map')) {
-        initMap();
-    } else {
-        return false;
+    // close mobile menu
+    $('.menu__toggle-btn--close').click(function() {
+        $('.menu__toggle-btn--close').hide();
+        $('#menu__mobile').animate({
+            width: "0",
+        }, 600 );
+    });
+
+    // header slider
+    $('#header-carousel').carousel({
+        // interval: 2000
+    });
+
+    // quote slider
+    $('#quote-carousel').carousel({
+        // interval: 2000
+    });
+
+    // init Masonry
+    var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true
+    });
+
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
+    });
+
+    // map
+    function initialize() {
+        if (!!document.getElementById('map')) {
+            initMap();
+        } else {
+            return false;
+        }
     }
-}
 
-function initMap() {
-    var uluru = {lat: 40.7143528, lng: -74.0059731};
+    function initMap() {
+        var uluru = {lat: 40.7143528, lng: -74.0059731};
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
-        center: uluru
-    });
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: uluru
+        });
 
-    var marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-        title: 'Mogo'
-    });
-}
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            title: 'Mogo'
+        });
+    }
 
-
-$(window).scroll(function() {
-	if ($(this).scrollTop() > 0) {
-		$('.header__fixed').addClass('header--fixed');
-	} else {
-		$('.header__fixed').removeClass('header--fixed');
-	}
-});
-
-$('.menu-collapsed').click(function() {
-	$(this).toggleClass('menu-expanded');
-});
-
-// $(function() {
-
-//     var w = $(window).width(),
-//       h = $(window).height();
-//     //$('section').width(w);
-//     $('section').height(h);
-//     $('menu .container').height(h - 60);
-//     $('body').prepend('<div id="overlay">');
-  
-//     $('#menu').click(function() {$('html').addClass('active');});
-//     $('#close-menu').click(function() {$('html').removeClass('active');});
-//     $('#overlay').click(function() {$('html').removeClass('active');});
-//     $(window).resize(function() {
-//       var w = $(window).width(),
-//         h = $(window).height();
-//       //$('section').width(w);
-//       $('section').height(h);
-//       $('menu .container').height(h - 60);
-//     });
-  
-//   });
+})();
